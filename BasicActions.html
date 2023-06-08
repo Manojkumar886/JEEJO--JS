@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display actions</title>
+</head>
+<body>
+    <!-- Alert/Document.write/Console.log -->
+<!-- Events(onclick,ondbleclick,onsubmit) -->
+    <ol>
+        List a Java script actions
+        <li onclick="alert('print a your output display an alert box')">Alert</li>
+        <li ondblclick="document.write('override a same page')">Document.writeln</li>
+        <li onmouseenter="console.log('blind a values')">Console.log</li>
+    </ol>
+    <!-- Keywords (let,var,const) -->
+
+    <!-- let a=10; -->
+    <script>
+        // var variableone="Jeejo";
+        // alert("my variableone name is "+variableone+"\n this value datatype is "+typeof(variableone))
+        const  objectvalues=["Manoj",78,89.9,true,7363663663673]
+        console.log("my objectvalue is "+objectvalues+"\n data type is "+typeof(objectvalues))
+    </script>    
+    <!-- INNERHTML -->
+    <p id="innerprocess">
+        this paragraph using innerhtml
+    </p>
+    <button onclick="document.getElementById('innerprocess').innerHTML=Date()">
+        click a button(show data and time)
+    </button>
+    <script>
+        let myvalue="innerhtml property is set and return an new html document of element";
+        document.getElementById('innerprocess').innerHTML=myvalue;
+    </script>
+
+    <!-- css using function -->
+    <ul id="cloths">
+        clothes type
+        <li>Slik</li>
+        <li>Rayon</li>
+        <li>Wool</li>
+        <li onclick="cssaction()">Nylon</li>
+    </ul>
+    <script>
+        // function func()
+
+        function cssaction()
+        {
+            let changes=document.getElementById('cloths')
+            changes.style.color="red"
+            // changes.style.backgroundColor="blue";
+            changes.style.textTransform="uppercase"
+
+        }
+    </script>
+</body>
+</html>
