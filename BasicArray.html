@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic Array Crudl</title>
+</head>
+<body>
+    <script>
+        // js array is declared by two method
+        let FruitsDetails=["Banana",'C',5,90.9,true];
+
+        const ChocolateName=new Array();
+        // push,pop,map,filter,length
+
+        ChocolateName.push("Nestle");
+        ChocolateName.push("Kitkat");
+        ChocolateName.push("Diary Day");
+        ChocolateName.push("levishBar");
+        ChocolateName.push("StrawberryJigZag");
+
+        // ChocolateName.pop()
+        // ChocolateName.pop()
+
+        // alert(ChocolateName);
+
+        // for(index=0;index<ChocolateName.length;index++)
+        // {
+        //     document.writeln("</br>"+ChocolateName[index])
+        // }
+
+        // function mychocolatenames(getavalue)
+        // {
+        //     alert(getavalue);
+        // }
+
+        // ChocolateName.map(mychocolatenames)
+
+        ChocolateName.map((myvalues)=>
+        {
+            document.write("</br>"+"<i>"+myvalues+"</i>")
+        })
+    </script>
+    
+</body>
+</html>

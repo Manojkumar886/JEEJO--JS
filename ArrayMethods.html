@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <em id="ChocolateNames">
+
+    </em>
+    <script>
+        let Chocolates=new Array("Brown Chocos","White Chocos","Black with White Chocos","Nuts Chocos","Badam Chocos");
+
+        // Chocolates.shift() -Delete a first values
+
+        // Chocolates.unshift("Nestle") - Add a new values with first index
+
+        // delete Chocolates[2]; -- delete a particular index
+
+        // splice(index,how much value, value1,value2,value3);
+        // Chocolates.splice(5,2,"Cadbury","FiveStar") 
+
+
+        //splice(index,how much value will be deleted) 
+        // Chocolates.splice(1,3);
+
+    //    let choco1= Chocolates.slice(3);
+
+        Chocolates.sort()
+
+        Chocolates.reverse()
+        
+        document.getElementById('ChocolateNames').innerHTML=Chocolates
+
+
+    </script>
+    
+</body>
+</html>

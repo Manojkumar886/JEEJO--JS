@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeofFunctions</title>
+</head>
+<body>
+    <script>
+         function nrmlfunction()
+         {
+            alert(" welcome to function topic")
+         }
+         function witharguments(username,password)
+         {
+            document.write("my username is :\t"+username+"\n my password :\t"+password)
+         }
+        //  syntex: keyword funcname=()=>{}
+
+        let FatArrowExample=()=>
+        {
+            console.log("Execution of console log is implemented by inspect element")
+        }
+
+        const fatarrow2=(a,b)=>
+        {
+            return a*b
+        }
+   </script>
+
+   <div>
+    <h1>Function Execution Types</h1>
+    <ol>
+        <li onclick="nrmlfunction()">Normal Function</li>
+        <li ondblclick="witharguments('Manoj','Manoj123')">Normal Function with Aruguments</li>
+        <li onclick="FatArrowExample()">fat Arrow Function</li>
+        <li onclick="alert(fatarrow2(59.8,2)+' is multiply of two numbers')">Fat arrow Function with using return type and arguments Passed</li>
+    </ol>
+   </div>
+    
+</body>
+</html>
