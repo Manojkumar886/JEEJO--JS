@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="basicvalidation">
+        <input type="text" placeholder="Please enter your fullname" name="fullname" />
+        <br>
+        <input  placeholder="please enter your mobile no" name="mobileno"/>
+        <br>
+        <input type="submit" type="button" value="submit" onclick="expression()"/>
+    </form>
+
+    <script>
+        let expression=()=>
+        {
+            // let fullname=document.forms['basicvalidation'].fullname.value;
+
+                let mobileno=document.forms['basicvalidation'].mobileno.value;
+
+            alert(" your value true/false "+((/^([0-9]{10})+$/)).test(mobileno))
+        }
+    </script>
+</body>
+</html>
