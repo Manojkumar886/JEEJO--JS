@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC FORM</title>
+    <style>
+        span{
+            color: rgb(244, 0, 0);
+        }
+    </style>
+    <script src="./IRCTC.js"></script>
+</head>
+<body>
+    <h2 align="center">IRCTC Address</h2>
+    <form name="irctc" action="#" onsubmit="return myValidation()">
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" placeholder=" Flat/Doorno/Location Address" name="flatno" />
+                        <br>
+                        <span id="flatno1"></span>
+                    </td>
+                    <td>
+                        <input type="text" placeholder=" Enter your StreetName" name="streetname" />
+                        <span id="streetname1"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="State and Country Name" name="statename" />
+                        <span id="statename1"></span>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="PinNumber" name="pincode" />
+                        <span id="pincode1"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="abac@gmail.com" name="email" />
+                        <span id="email1"></span>
+                    </td>
+                    <td>
+                        <input type="password" placeholder="min 6 max 12" name="pass" />
+                        <span id="pass1"></span>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <input type="submit" value="Register" />
+                    </td>
+                    <td>
+                        <input type="reset" value="Cancel"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </form>
+</body>
+</html>
