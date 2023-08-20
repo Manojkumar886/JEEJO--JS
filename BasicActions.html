@@ -19,7 +19,7 @@
 
     <!-- let a=10; -->
     <script>
-        // var variableone="Jeejo";
+        // var variableone=4;
         // alert("my variableone name is "+variableone+"\n this value datatype is "+typeof(variableone))
         const  objectvalues=["Manoj",78,89.9,true,7363663663673]
         console.log("my objectvalue is "+objectvalues+"\n data type is "+typeof(objectvalues))
@@ -45,14 +45,17 @@
         <li onclick="cssaction()">Nylon</li>
     </ul>
     <script>
-        // function func()
+        // function funcname(){ }
 
         function cssaction()
         {
-            let changes=document.getElementById('cloths')
-            changes.style.color="red"
-            // changes.style.backgroundColor="blue";
-            changes.style.textTransform="uppercase"
+         
+            let element=document.getElementsByTagName('li')[4];
+            element.style.backgroundColor="yellow";
+            // let changes=document.getElementById('cloths')
+            // changes.style.color="red"
+            // // changes.style.backgroundColor="blue";
+            // changes.style.textTransform="uppercase"
         }
     </script>
 </body>

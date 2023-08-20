@@ -12,26 +12,52 @@
     <script>
         let Chocolates=new Array("Brown Chocos","White Chocos","Black with White Chocos","Nuts Chocos","Badam Chocos");
 
+        // Chocolates.push("LevishBar");//add a last index
+        // Chocolates.unshift("kitkat");//add a value in first index
+
+
+        // Chocolates.pop()//delete a last value
+        // Chocolates.shift()//delete a first values
+
+
+        // delete Chocolates[2];
+
+        // splice()-when will used to add(replace) a set values or else delete a set of values
+
+        Chocolates.splice(5,4,"Kitkat","Park","Munch","FiveStar");
+        Chocolates.splice(5,4);
+
+        // Chocolates.slice(2);
+        // let changes=Chocolates.slice(4)
+
+        Chocolates.sort()
+        Chocolates.reverse()
+
+        
+        document.getElementById('ChocolateNames').innerHTML=Chocolates
+
+
+
         // Chocolates.shift() -Delete a first values
 
-        // Chocolates.unshift("Nestle") - Add a new values with first index
+    //     Chocolates.unshift("Nestle") - Add a new values with first index
 
-        // delete Chocolates[2]; -- delete a particular index
+    //     delete Chocolates[2]; -- delete a particular index
 
-        // splice(index,how much value, value1,value2,value3);
-        // Chocolates.splice(5,2,"Cadbury","FiveStar") 
+    //     splice(index,how much value, value1,value2,value3);
+    //     Chocolates.splice(5,2,"Cadbury","FiveStar") 
 
 
-        //splice(index,how much value will be deleted) 
-        // Chocolates.splice(1,3);
+    //     splice(index,how much value will be deleted) 
+    //     Chocolates.splice(1,3);
 
     //    let choco1= Chocolates.slice(3);
 
-        Chocolates.sort()
+        // Chocolates.sort()
 
-        Chocolates.reverse()
+        // Chocolates.reverse()
         
-        document.getElementById('ChocolateNames').innerHTML=Chocolates
+        
 
 
     </script>

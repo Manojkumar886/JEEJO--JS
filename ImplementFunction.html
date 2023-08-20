@@ -8,14 +8,16 @@
 <body>
     <script>
          function nrmlfunction()
-         {
+         {x
             alert(" welcome to function topic")
          }
          function witharguments(username,password)
          {
-            document.write("my username is :\t"+username+"\n my password :\t"+password)
+            alert("my username is :"+username+"\n my password :\t"+password)
          }
         //  syntex: keyword funcname=()=>{}
+        // Fat Arrow FUnction(=>)
+        
 
         let FatArrowExample=()=>
         {
@@ -24,7 +26,7 @@
 
         const fatarrow2=(a,b)=>
         {
-            return a*b
+            return a*b;
         }
    </script>
 
@@ -34,7 +36,7 @@
         <li onclick="nrmlfunction()">Normal Function</li>
         <li ondblclick="witharguments('Manoj','Manoj123')">Normal Function with Aruguments</li>
         <li onclick="FatArrowExample()">fat Arrow Function</li>
-        <li onclick="alert(fatarrow2(59.8,2)+' is multiply of two numbers')">Fat arrow Function with using return type and arguments Passed</li>
+        <li onclick="alert(fatarrow2(59,2)+' is multiply of two numbers')">Fat arrow Function with using return type and arguments Passed</li>
     </ol>
    </div>
     

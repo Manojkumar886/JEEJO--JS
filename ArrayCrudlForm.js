@@ -5,7 +5,7 @@ let Adding=()=>
     let newvegetable=document.getElementById('uservalue').value;
 
     // VegetableName.unshift(newvegetable);
-    VegetableName.push(newvegetable)
+    // VegetableName.unshift(newvegetable)
     alert(newvegetable+" your vegetable value is added successfully");
     Listing1()
 }
@@ -28,19 +28,21 @@ let Updating=()=>
 
     let newvalue=prompt("please tell us which value you want update/replace")
 
-    VegetableName[index]=newvalue;
+    VegetableName[index]=newvalue;//vegetable[1]=green chilly;
+
     Listing1()
 }
 
 let Removing=()=>
 {
-    let deletedvalue=document.getElementById('uservalue').value;
-    alert(VegetableName[deletedvalue]+" has been deleted successfully")
-    delete VegetableName[deletedvalue];
-    // VegetableName=VegetableName.filter((data)=>
-    // {
-    //     return data!==VegetableName[deletedvalue];
-    // })
+    let deletevalue=document.getElementById('uservalue').value;
+    // alert(VegetableName[deletedvalue]+" has been deleted successfully")
+    // delete VegetableName[deletedvalue];
+    
+  VegetableName=VegetableName.filter((getting)=>
+  {
+        return getting!==deletevalue;
+  })
     Listing1()
 }
  var Searching=()=>
@@ -50,11 +52,8 @@ let Removing=()=>
     {
         if(VegetableName[pos]===checkingvalue)
         {
-            return pos;
-        }
-        else
-        {
-            return "your value is not founded";
+            return pos; 
+            break;
         }
     }
  }

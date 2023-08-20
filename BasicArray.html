@@ -26,20 +26,14 @@
 
         // for(index=0;index<ChocolateName.length;index++)
         // {
-        //     document.writeln("</br>"+ChocolateName[index])
+        //     document.writeln("<b>"+ChocolateName[index]+"</b></br>")
         // }
-
-        // function mychocolatenames(getavalue)
-        // {
-        //     alert(getavalue);
-        // }
-
-        // ChocolateName.map(mychocolatenames)
-
-        ChocolateName.map((myvalues)=>
-        {
-            document.write("</br>"+"<i>"+myvalues+"</i>")
-        })
+        
+       ChocolateName.map(
+        (listonebyone)=>{
+            document.write("<i>"+listonebyone+"</i>");
+        }
+       )
     </script>
     
 </body>
